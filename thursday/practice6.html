@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: sans-serif;">
+    <main>
+        <h1>Contact Form</h1>
+        <form style="width: 80%; max-width: 480px; background: green; padding: 20px; margin-left: auto; margin-right: auto; border-radius: 8px; color: white;">
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <label for="firstName">First Name</label>
+                <input id="firstName" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="text" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="text" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="tel" />
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p>What is your gender</p>
+                <label for="male">Male</label>
+                <input id="male" name="gender" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="radio" />
+                <label for="female">Female</label>
+                <input id="female" name="gender" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="radio" />
+            </div>
+            <div style="margin-bottom: 20px;">
+                <p>What would you like to get? (you can select more than 1 item)</p>
+                <label for="Pizza">Pizza</label>
+                <input id="Pizza" name="gender" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="checkbox" />
+                <label for="checken">Chicken</label>
+                <input id="checken" name="gender" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="checkbox" />
+                <label for="Fries">Fries</label>
+                <input id="Fries" name="gender" style="padding: 8px 16px; border-radius: 8px; border: 1px solid;" type="checkbox" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <label for="rating">Rate your experience</label>
+                <input id="rating" type="range" min="0" max="10" />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+                <label for="rating">Select your favorite color</label>
+                <input id="rating" type="color" />
+            </div>
+            
+        </form>
+    </main>
+</body>
+</html>
