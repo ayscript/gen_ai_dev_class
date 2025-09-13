@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      button {
+        cursor: pointer;
+        padding: 8px 20px;
+        border-radius: 4px;
+        border: none;
+      }
+
+      body {
+        background: #189812e5;
+        color: #f1f1f1;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 16px;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .hero div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+      }
+
+      .heroText {
+        max-width: 640px;
+      }
+
+      .hero button {
+        margin-top: 20px;
+      }
+
+      .about {
+        padding: 24px;
+      }
+
+      .about h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .contact {
+        padding: 24px;
+      }
+
+      .contact h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .contact form {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .input_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .input {
+        background: none;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 8px 16px;
+      }
+
+      .name {
+        display: flex;
+        gap: 16px;
+      }
+
+      .name div {
+        flex: 1;
+      }
+
+      footer{
+        text-align: center;
+        background-color: rgb(65, 139, 65);
+        padding: 20px;
+      }
+
+      footer a {
+        color: white;
+      }
+    </style>
+    <title>My Website</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <span>Logo</span>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Smart <span>Hydration</span> Bottle</h1>
+          <p class="heroText">
+            Keep your hydration game strong.Track sales, manage stock, and
+            customize your water bottle product details—all in one place. Let’s
+            keep things cool and flowing.
+          </p>
+          <button>Get Started</button>
+        </div>
+        <img src="hero.png" />
+      </section>
+      <section class="about" id="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          ducimus aperiam, nemo earum sequi labore atque dolorem necessitatibus
+          excepturi iusto. Suscipit magnam commodi cupiditate sapiente
+          repudiandae numquam illo omnis ipsam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          molestias alias sint provident, quaerat, accusantium inventore atque
+          laboriosam beatae fuga laborum error eveniet animi saepe fugit minus
+          obcaecati unde culpa! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Mollitia molestias alias sint provident, quaerat,
+          accusantium inventore atque laboriosam beatae fuga laborum error
+          eveniet animi saepe fugit minus obcaecati unde culpa! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Mollitia molestias alias
+          sint provident, quaerat, accusantium inventore atque laboriosam beatae
+          fuga laborum error eveniet animi saepe fugit minus obcaecati unde
+          culpa!
+        </p>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="name">
+            <div class="input_wrapper">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" class="input" />
+            </div>
+            <div class="input_wrapper">
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" class="input" />
+            </div>
+          </div>
+          <div class="input_wrapper">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input" />
+          </div>
+          <div class="input_wrapper">
+            <label for="message">Message:</label>
+            <textarea id="message" class="input"></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2025, Powered by: <a href="https://ayscript.vercel.app">ayscript</a></p>
+    </footer>
+  </body>
+</html>
